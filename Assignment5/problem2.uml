@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.neu.ccs.cs5004.problem2</OriginalElement>
+  <nodes>
+    <node x="0.0" y="227.0">edu.neu.ccs.cs5004.problem2.EmptyTest</node>
+    <node x="45.75" y="0.0">edu.neu.ccs.cs5004.problem2.BagOfWords</node>
+    <node x="124.0" y="79.0">edu.neu.ccs.cs5004.problem2.Empty</node>
+    <node x="0.0" y="79.0">edu.neu.ccs.cs5004.problem2.BagCons</node>
+    <node x="0.0" y="153.0">edu.neu.ccs.cs5004.problem2.BagConsTest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.neu.ccs.cs5004.problem2.Empty" target="edu.neu.ccs.cs5004.problem2.BagOfWords">
+      <point x="0.0" y="-14.5" />
+      <point x="167.5" y="54.0" />
+      <point x="141.75" y="54.0" />
+      <point x="32.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.problem2.BagCons" target="edu.neu.ccs.cs5004.problem2.BagOfWords">
+      <point x="0.0" y="-14.5" />
+      <point x="52.0" y="54.0" />
+      <point x="77.75" y="54.0" />
+      <point x="-32.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="105.5" y="128.0" />
+  <SelectedNodes>
+    <node>edu.neu.ccs.cs5004.problem2.EmptyTest</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

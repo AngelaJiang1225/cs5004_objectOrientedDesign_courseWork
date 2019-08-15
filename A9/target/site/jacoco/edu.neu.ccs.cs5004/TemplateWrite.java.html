@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>TemplateWrite.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CS5004 Assignment</a> &gt; <a href="index.source.html" class="el_package">edu.neu.ccs.cs5004</a> &gt; <span class="el_source">TemplateWrite.java</span></div><h1>TemplateWrite.java</h1><pre class="source lang-java linenums">package edu.neu.ccs.cs5004;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+
+/**
+ * Write template into output file.
+ */
+<span class="fc" id="L13">public class TemplateWrite {</span>
+  /**
+   * Parse the template into the output files.
+   *
+   * @param templateParser templateParser
+   * @param outputPath     outputPath
+   * @throws IOException if there is mistake in file processing.
+   */
+  public static void writeTemplate(TemplateParser templateParser,
+                                   HeaderMatch headerMatch, String outputPath)
+      throws IOException {
+<span class="fc" id="L24">    BufferedWriter bufferWrite = null;</span>
+    try {
+      //Specify the file name and path here
+<span class="fc" id="L27">      File file = new File(outputPath);</span>
+      // file gets created if there is no such file.
+<span class="pc bpc" id="L29" title="1 of 2 branches missed.">      if (!file.exists()) {</span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">        if (file.createNewFile()) {</span>
+<span class="fc" id="L31">          System.out.println(&quot;The file creation succeed!&quot;);</span>
+        } else {
+<span class="nc" id="L33">          System.out.println(&quot;Fail to create the file!&quot;);</span>
+        }
+      }
+
+      //FileWriter fileWriter = new FileWriter(file, true);
+<span class="fc" id="L38">      FileOutputStream fileStream = new FileOutputStream(file);</span>
+<span class="fc" id="L39">      Writer fileWriter = new OutputStreamWriter(fileStream, &quot;UTF-8&quot;);</span>
+<span class="fc" id="L40">      bufferWrite = new BufferedWriter(fileWriter);</span>
+      //String mycontent = &quot;This String would be written&quot;;
+<span class="fc bfc" id="L42" title="All 2 branches covered.">      for (TemplateLine templateLine : templateParser.getResTemplate().getTemplateLines()) {</span>
+<span class="fc" id="L43">        bufferWrite.write(replaceTerm(templateLine, headerMatch));</span>
+<span class="fc" id="L44">      }</span>
+<span class="fc" id="L45">      bufferWrite.flush();</span>
+<span class="fc" id="L46">      System.out.println(&quot;File written Completed!&quot;);</span>
+<span class="fc" id="L47">      bufferWrite.close();</span>
+<span class="nc" id="L48">    } catch (IOException e) {</span>
+<span class="nc" id="L49">      throw new IOException(&quot;Exceptions for IO!&quot;);</span>
+<span class="fc" id="L50">    }</span>
+<span class="fc" id="L51">  }</span>
+
+  /**
+   * Replace the terms in the templateLine and concatenate each term and placeholder into string.
+   * @param templateLine the templateLine
+   * @param headerMatch the headerMatch
+   * @return the string after being replaced
+   */
+  //HashMap&lt;String, String&gt; wordMap
+  public static String replaceTerm(TemplateLine templateLine, HeaderMatch headerMatch) {
+<span class="fc" id="L61">    StringBuilder str = new StringBuilder();</span>
+    //String res = &quot;&quot;;
+<span class="fc" id="L63">    boolean order = true;</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">    for (String text : templateLine.getLineList()) {</span>
+<span class="fc bfc" id="L65" title="All 2 branches covered.">      if (!order) {</span>
+<span class="fc" id="L66">        text = headerMatch.getReceivers().get(text);</span>
+<span class="fc" id="L67">        order = true;</span>
+      } else {
+<span class="fc" id="L69">        order = false;</span>
+      }
+<span class="fc" id="L71">      str.append(text);</span>
+<span class="fc" id="L72">    }</span>
+<span class="fc" id="L73">    return str.toString();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

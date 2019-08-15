@@ -1,0 +1,12 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+CS5004 Assignment,edu.neu.ccs.cs5004,CommandParser,16,380,12,40,3,65,12,27,0,13
+CS5004 Assignment,edu.neu.ccs.cs5004,TemplateLine,9,38,2,4,2,10,2,6,0,5
+CS5004 Assignment,edu.neu.ccs.cs5004,TemplateWrite,9,101,2,8,3,27,2,6,0,3
+CS5004 Assignment,edu.neu.ccs.cs5004,TemplateWriteForAll,10,64,1,5,4,11,2,3,1,1
+CS5004 Assignment,edu.neu.ccs.cs5004,TemplateParser,0,129,1,11,0,29,1,11,0,6
+CS5004 Assignment,edu.neu.ccs.cs5004,ContactParser,0,150,2,14,0,29,2,13,0,7
+CS5004 Assignment,edu.neu.ccs.cs5004,Template,0,56,1,5,0,13,1,7,0,5
+CS5004 Assignment,edu.neu.ccs.cs5004,HeaderMatch,0,61,1,5,0,15,1,8,0,6
+CS5004 Assignment,edu.neu.ccs.cs5004,FileReader,33,30,6,2,1,6,5,1,1,1
+CS5004 Assignment,edu.neu.ccs.cs5004,SystemController,3,39,0,0,1,10,1,1,1,1
+CS5004 Assignment,edu.neu.ccs.cs5004,ContactFile,0,61,1,5,0,15,1,8,0,6

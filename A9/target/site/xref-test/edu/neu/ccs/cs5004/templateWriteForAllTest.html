@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TemplateWriteForAllTest xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../testapidocs/edu/neu/ccs/cs5004/TemplateWriteForAllTest.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> edu.neu.ccs.cs5004;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> org.junit.Before;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <strong class="jxr_keyword">import</strong> org.junit.Test;
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">import</strong> java.io.File;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <strong class="jxr_keyword">import</strong> java.io.FileInputStream;
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <strong class="jxr_keyword">import</strong> java.io.FileNotFoundException;
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <strong class="jxr_keyword">import</strong> java.io.IOException;
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <strong class="jxr_keyword">import</strong> <strong class="jxr_keyword">static</strong> org.junit.Assert.*;
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../edu/neu/ccs/cs5004/TemplateWriteForAllTest.html">TemplateWriteForAllTest</a> {
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <strong class="jxr_keyword">private</strong> TemplateParser templateParser = <strong class="jxr_keyword">new</strong> TemplateParser();
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <strong class="jxr_keyword">private</strong> ContactParser contactParser = <strong class="jxr_keyword">new</strong> ContactParser();
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <strong class="jxr_keyword">private</strong> String path = <span class="jxr_string">"email"</span>;
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <strong class="jxr_keyword">private</strong> String type = <span class="jxr_string">"email"</span>;
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <strong class="jxr_keyword">private</strong> String line1 = <span class="jxr_string">"[[first_name]] [[last_name]]"</span>;
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <strong class="jxr_keyword">private</strong> String line2 = <span class="jxr_string">"\&quot;first_name\&quot;,\&quot;last_name\&quot;,\&quot;company_name\&quot;,\&quot;address\&quot;,\&quot;city\&quot;,\&quot;county\&quot;,\&quot;state\&quot;,\&quot;zip\&quot;,\&quot;phone1\&quot;,\&quot;phone2\&quot;"</span>;
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <strong class="jxr_keyword">private</strong> String line3 = <span class="jxr_string">"\&quot;James\&quot;,\&quot;Butt\&quot;,\&quot;Benton, John B Jr\&quot;,\&quot;6649 N Blue Gum St\&quot;,\&quot;New Orleans\&quot;,\&quot;Orleans\&quot;,\&quot;LA\&quot;,\&quot;70116\&quot;,\&quot;504-621-8927\&quot;,\&quot;504-845-1427\&quot;"</span>;
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>    @Before
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>    <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> setUp() <strong class="jxr_keyword">throws</strong> IOException {
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>    <strong class="jxr_keyword">this</strong>.templateParser.parse(<strong class="jxr_keyword">this</strong>.line1);
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>    <strong class="jxr_keyword">this</strong>.contactParser.parse(line2);
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>    <strong class="jxr_keyword">this</strong>.contactParser.parse(line3);
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>    }
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>  
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>    @Test
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>    <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> writeTemplates() <strong class="jxr_keyword">throws</strong> IOException {
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>      TemplateWriteForAll.writeTemplates(<strong class="jxr_keyword">this</strong>.templateParser, <strong class="jxr_keyword">this</strong>.contactParser, <strong class="jxr_keyword">this</strong>.path, <strong class="jxr_keyword">this</strong>.type);
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>      String encoding = <span class="jxr_string">"UTF-8"</span>;
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>      File file = <strong class="jxr_keyword">new</strong> File(<span class="jxr_string">".//email//email1.txt"</span>);
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>      Long filelength = file.length();
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>      byte[] filecontent = <strong class="jxr_keyword">new</strong> byte[filelength.intValue()];
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>      <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>        FileInputStream in = <strong class="jxr_keyword">new</strong> FileInputStream(file);
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>        in.read(filecontent);
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>        in.close();
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>      } <strong class="jxr_keyword">catch</strong> (FileNotFoundException e) {
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>        e.printStackTrace();
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>      } <strong class="jxr_keyword">catch</strong> (IOException e) {
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>        e.printStackTrace();
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>      }
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>      assertEquals(<span class="jxr_string">"James Butt"</span>, <strong class="jxr_keyword">new</strong> String(filecontent, encoding));
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>    }
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2019. All rights reserved.</div>
+</body>
+</html>

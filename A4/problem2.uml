@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.neu.ccs.cs5004.assignment4.problem2</OriginalElement>
+  <nodes>
+    <node x="141.5" y="232.0">edu.neu.ccs.cs5004.assignment4.problem2.RetrieveWinner</node>
+    <node x="186.5" y="79.0">edu.neu.ccs.cs5004.assignment4.problem2.Record</node>
+    <node x="0.0" y="844.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballLeagueTest</node>
+    <node x="161.0" y="543.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerLeague</node>
+    <node x="299.0" y="390.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballGame</node>
+    <node x="541.0" y="992.0">edu.neu.ccs.cs5004.assignment4.problem2.Win</node>
+    <node x="425.0" y="844.0">edu.neu.ccs.cs5004.assignment4.problem2.BaseballGameTest</node>
+    <node x="0.0" y="770.0">edu.neu.ccs.cs5004.assignment4.problem2.InvalidGameException</node>
+    <node x="168.5" y="617.0">edu.neu.ccs.cs5004.assignment4.problem2.Team</node>
+    <node x="145.0" y="390.0">edu.neu.ccs.cs5004.assignment4.problem2.BaseballGame</node>
+    <node x="162.0" y="158.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballRecord</node>
+    <node x="315.0" y="543.0">edu.neu.ccs.cs5004.assignment4.problem2.BaseballLeague</node>
+    <node x="143.0" y="696.0">edu.neu.ccs.cs5004.assignment4.problem2.BaseballTeam</node>
+    <node x="613.0" y="918.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballTeamTest</node>
+    <node x="197.0" y="992.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerTeamTest</node>
+    <node x="663.0" y="770.0">edu.neu.ccs.cs5004.assignment4.problem2.BaseballRecordTest</node>
+    <node x="631.0" y="844.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerLeagueTest</node>
+    <node x="295.0" y="696.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballTeam</node>
+    <node x="0.0" y="390.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerGame</node>
+    <node x="178.5" y="464.0">edu.neu.ccs.cs5004.assignment4.problem2.Leagues</node>
+    <node x="322.0" y="158.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerRecord</node>
+    <node x="0.0" y="992.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerGameTest</node>
+    <node x="228.0" y="770.0">edu.neu.ccs.cs5004.assignment4.problem2.TiedTeamsException</node>
+    <node x="392.0" y="992.0">edu.neu.ccs.cs5004.assignment4.problem2.Outcome</node>
+    <node x="205.0" y="918.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballGameTest</node>
+    <node x="213.0" y="844.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballRecordTest</node>
+    <node x="0.0" y="696.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerTeam</node>
+    <node x="188.5" y="0.0">edu.neu.ccs.cs5004.assignment4.problem2.Points</node>
+    <node x="0.0" y="918.0">edu.neu.ccs.cs5004.assignment4.problem2.SoccerRecordTest</node>
+    <node x="0.0" y="543.0">edu.neu.ccs.cs5004.assignment4.problem2.FootballLeague</node>
+    <node x="409.0" y="918.0">edu.neu.ccs.cs5004.assignment4.problem2.BaseballTeamTest</node>
+    <node x="470.0" y="617.0">edu.neu.ccs.cs5004.assignment4.problem2.FutureGameException</node>
+    <node x="0.0" y="158.0">edu.neu.ccs.cs5004.assignment4.problem2.BaseballRecord</node>
+    <node x="167.0" y="311.0">edu.neu.ccs.cs5004.assignment4.problem2.Games</node>
+    <node x="448.0" y="770.0">edu.neu.ccs.cs5004.assignment4.problem2.TiedGameException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.FootballRecord" target="edu.neu.ccs.cs5004.assignment4.problem2.Record">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.BaseballTeam" target="edu.neu.ccs.cs5004.assignment4.problem2.Team">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.BaseballGame" target="edu.neu.ccs.cs5004.assignment4.problem2.Games">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.SoccerGame" target="edu.neu.ccs.cs5004.assignment4.problem2.Games">
+      <point x="0.0" y="-14.5" />
+      <point x="62.5" y="365.0" />
+      <point x="182.0" y="365.0" />
+      <point x="-30.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.Games" target="edu.neu.ccs.cs5004.assignment4.problem2.RetrieveWinner">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.FootballLeague" target="edu.neu.ccs.cs5004.assignment4.problem2.Leagues">
+      <point x="0.0" y="-14.5" />
+      <point x="70.5" y="518.0" />
+      <point x="195.0" y="518.0" />
+      <point x="-33.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.SoccerRecord" target="edu.neu.ccs.cs5004.assignment4.problem2.Record">
+      <point x="0.0" y="-14.5" />
+      <point x="388.5" y="133.0" />
+      <point x="262.3333333333333" y="133.0" />
+      <point x="30.333333333333314" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.SoccerTeam" target="edu.neu.ccs.cs5004.assignment4.problem2.Team">
+      <point x="0.0" y="-14.5" />
+      <point x="61.5" y="671.0" />
+      <point x="182.0" y="671.0" />
+      <point x="-27.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.SoccerLeague" target="edu.neu.ccs.cs5004.assignment4.problem2.Leagues">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.FootballGame" target="edu.neu.ccs.cs5004.assignment4.problem2.Games">
+      <point x="0.0" y="-14.5" />
+      <point x="365.0" y="365.0" />
+      <point x="242.0" y="365.0" />
+      <point x="30.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.BaseballRecord" target="edu.neu.ccs.cs5004.assignment4.problem2.Record">
+      <point x="0.0" y="-14.5" />
+      <point x="71.0" y="133.0" />
+      <point x="201.66666666666666" y="133.0" />
+      <point x="-30.333333333333343" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.Record" target="edu.neu.ccs.cs5004.assignment4.problem2.Points">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.FootballTeam" target="edu.neu.ccs.cs5004.assignment4.problem2.Team">
+      <point x="0.0" y="-14.5" />
+      <point x="360.0" y="671.0" />
+      <point x="236.0" y="671.0" />
+      <point x="27.0" y="14.5" />
+    </edge>
+    <edge source="edu.neu.ccs.cs5004.assignment4.problem2.BaseballLeague" target="edu.neu.ccs.cs5004.assignment4.problem2.Leagues">
+      <point x="0.0" y="-14.5" />
+      <point x="386.5" y="518.0" />
+      <point x="261.0" y="518.0" />
+      <point x="33.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3957732949087416" x="416.0" y="510.5" />
+  <SelectedNodes>
+    <node>edu.neu.ccs.cs5004.assignment4.problem2.Games</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

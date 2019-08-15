@@ -1,0 +1,12 @@
+edu/neu/ccs/cs5004/Template.class
+edu/neu/ccs/cs5004/TemplateWriteForAll.class
+edu/neu/ccs/cs5004/TemplateLine.class
+edu/neu/ccs/cs5004/SystemController.class
+edu/neu/ccs/cs5004/ContactParser.class
+edu/neu/ccs/cs5004/FileReader.class
+edu/neu/ccs/cs5004/HeaderMatch.class
+edu/neu/ccs/cs5004/TemplateWrite.class
+edu/neu/ccs/cs5004/TemplateParser.class
+edu/neu/ccs/cs5004/ContactFile.class
+edu/neu/ccs/cs5004/IParser.class
+edu/neu/ccs/cs5004/CommandParser.class

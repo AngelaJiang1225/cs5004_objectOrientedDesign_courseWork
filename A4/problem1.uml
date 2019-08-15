@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.neu.ccs.cs5004.assignment4.problem1</OriginalElement>
+  <nodes>
+    <node x="167.0" y="370.0">edu.neu.ccs.cs5004.assignment4.problem1.VehicleTest</node>
+    <node x="0.0" y="518.0">edu.neu.ccs.cs5004.assignment4.problem1.Vehicle</node>
+    <node x="247.0" y="148.0">edu.neu.ccs.cs5004.assignment4.problem1.ParkingSpotTest</node>
+    <node x="0.0" y="222.0">edu.neu.ccs.cs5004.assignment4.problem1.ParkVehicleTest</node>
+    <node x="0.0" y="296.0">edu.neu.ccs.cs5004.assignment4.problem1.ParkingType</node>
+    <node x="191.0" y="222.0">edu.neu.ccs.cs5004.assignment4.problem1.ParkingStatus</node>
+    <node x="0.0" y="370.0">edu.neu.ccs.cs5004.assignment4.problem1.VehicleType</node>
+    <node x="0.0" y="444.0">edu.neu.ccs.cs5004.assignment4.problem1.ParkVehicle</node>
+    <node x="0.0" y="74.0">edu.neu.ccs.cs5004.assignment4.problem1.InvalidSpotTypeException</node>
+    <node x="328.0" y="444.0">edu.neu.ccs.cs5004.assignment4.problem1.VehicleSize</node>
+    <node x="0.0" y="148.0">edu.neu.ccs.cs5004.assignment4.problem1.InvalidSpotSizeException</node>
+    <node x="0.0" y="0.0">edu.neu.ccs.cs5004.assignment4.problem1.UnavailableSpotException</node>
+    <node x="164.0" y="444.0">edu.neu.ccs.cs5004.assignment4.problem1.ParkingSize</node>
+    <node x="169.0" y="296.0">edu.neu.ccs.cs5004.assignment4.problem1.ParkingSpot</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.7266313932980599" x="222.5" y="273.5" />
+  <SelectedNodes>
+    <node>edu.neu.ccs.cs5004.assignment4.problem1.VehicleTest</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
